@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-04T23:49:10 IST" name="Default suite" finished-at="2024-11-04T23:49:20 IST" duration-ms="10744">
+  <suite started-at="2024-11-05T00:06:57 IST" name="Default suite" finished-at="2024-11-05T00:07:20 IST" duration-ms="22644">
     <groups>
     </groups>
-    <test started-at="2024-11-04T23:49:10 IST" name="Default test" finished-at="2024-11-04T23:49:20 IST" duration-ms="10744">
+    <test started-at="2024-11-05T00:06:57 IST" name="Default test" finished-at="2024-11-05T00:07:20 IST" duration-ms="22644">
       <class name="Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Login@1283bb96]" started-at="2024-11-04T23:49:10 IST" name="setup" finished-at="2024-11-04T23:49:18 IST" duration-ms="8282" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Login@1283bb96]" started-at="2024-11-05T00:06:58 IST" name="setup" finished-at="2024-11-05T00:07:17 IST" duration-ms="19723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInvalidCred()[pri:0, instance:Login@1283bb96]" started-at="2024-11-04T23:49:18 IST" name="loginWithInvalidCred" finished-at="2024-11-04T23:49:20 IST" duration-ms="2236" status="PASS">
+        <test-method signature="loginWithInvalidCred()[pri:0, instance:Login@1283bb96]" started-at="2024-11-05T00:07:17 IST" name="loginWithInvalidCred" finished-at="2024-11-05T00:07:19 IST" duration-ms="2157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCred -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Login@1283bb96]" started-at="2024-11-04T23:49:20 IST" name="teardown" finished-at="2024-11-04T23:49:20 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Login@1283bb96]" started-at="2024-11-05T00:07:19 IST" name="teardown" finished-at="2024-11-05T00:07:20 IST" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

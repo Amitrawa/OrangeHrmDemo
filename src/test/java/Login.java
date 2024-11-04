@@ -4,6 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -46,6 +47,20 @@ public class Login {
         driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@name='password']"))   .sendKeys("admin123");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
+        
+        // Expected URL
+        
+        String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
+        
+        // Actual URL
+        
+        String actualUrl = driver.getCurrentUrl();
+        
+        Assert.assertEquals(actualUrl, expectedUrl,"Url Mismatch");
+        
+        System.out.println("Actual URL: "+actualUrl);
+        
+        
     }
         @Test
         public void loginWithInvalidCred() {
@@ -54,6 +69,12 @@ public class Login {
             driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
             driver.findElement(By.xpath("//input[@name='password']"))   .sendKeys("admwwin123");
             driver.findElement(By.xpath("//button[@type='submit']")).click();
+            
+            String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+            String actualUrl =driver.getCurrentUrl();
+            Assert.assertEquals(actualUrl, expectedUrl,"Url Mismatch");
+            System.out.println("Actual URL: "+actualUrl);
+
     }
 
     @AfterMethod
